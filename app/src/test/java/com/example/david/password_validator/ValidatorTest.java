@@ -11,7 +11,7 @@ public class ValidatorTest{
 
     @Test
     public void testValidator(){
-        String password = "woah123123123";
+        String password = "woAh$123123123";
         String result = Validator.valid(password);
         assertEquals(result, "Password is valid");
     }
