@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public static void main(String[] args)
     {
+        /*Was a testcase before implementation
         String pwd = "david11%1A11";
-        System.out.println(valid(pwd));
+        System.out.println(valid(pwd));*/
     }
 
     /** Called when the user taps the Send button */
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         //Must not be "password or Password"
         //Must contain at least one uppercase and at least one lowercase letter
         //Must contain at least one number
+        //Must contain at least 1 non-alphanumeric character
         if(notPassword(pwd) && passwordLength(pwd) && passwordUppercase(pwd) && passwordLowercase(pwd) && hasDigit(pwd) && hasSpecial(pwd))
         {
             return true;
